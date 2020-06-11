@@ -26,7 +26,7 @@ class Car {
 
 const pay = (regNum, hr) => {                // <<--- main fuction that will create a new 'car'  entry
     const car = new Car(regNum);
-    for (i= 0; i < hr; i++);{
+    for (let i= 0; i < hr; i++);{
         car.increaseHours();
     }
     return `you neeed to pay $ ${car.charge} for ${car.hours} hours.`;                           
@@ -35,15 +35,20 @@ const pay = (regNum, hr) => {                // <<--- main fuction that will cre
 
 //console.log(pay('M7 CAR', 5)); // the outpout woud be in this case $7.5 for 5 hours.
 
-class staff extends Car {  // <-- create a subClass using class 'regNum' as parent
-    constructor(name,regNum, employeeId, employeeDisc) {
-        let discount = pay / 2;
-        super(_carReg, _hours)  // <- only import the parameters we need for the new class with a dicounted price for employees
-        this._employeeId = true;
-        this._employeeDisc = staff;
+class Staff extends Car {          // <-- create a subClass using class 'regNum' as parent
+    constructor(regNum, employerrNumber) {
+        let staff = (pay / 2);
+        super(regNum)              // <- only import the parameters we need for the new class with a dicounted price for employees
+        this.employerrNumber = staff;
     }
     
 }
 
-let J = new staff(John,Y10, 1234, pay);
- John
+
+
+
+const car = new Staff('Y10', 1234,);
+
+//console.log(Y.discount);
+ 
+console.log(car.employerrNumber);
